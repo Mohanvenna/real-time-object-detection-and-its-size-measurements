@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>mini project</title>
+    <style>
+    #heading{
+    text - align: center;
+    font-style:italic;
+    font-size:20px;
+    }
+    #valve{
+    position:absolute;
+    }
+    #point{
+    position:relative;
+    float:right;
+    }
+    #shadow{
+    position:relative;
+    float:right;
+    padding: left 20px;
+    }
+    #normal{
+    position:relative;
+    float:right;
+    }
+}
+    </style>
+</head>
+<body>
+    <div id="heading"><h1 align="center"> REAL TIME OBJECT DETECTION AND ITS SIZE MEASUREMENT</h1></div>
+    <div id="valve"><a href="valve" style="color:blue" target="_blank"><img align="left" src="{% static 'lvv/image.png' %}"width="76%" alt="valve" ></a></div>
+    <div id="shadow">
+        <a href="shadow"><img src="{% static 'lvv/shadow.png' %}" width="80%" alt="shadow" ></a>
+    </div>
+    <div id="normal">
+        <a href="new"><img src="{% static 'lvv/normal.png' %}"  alt="normal" ></a>
+    </div>
+    <div id="point">
+        <a href="poi"><img src="{% static 'lvv/point.png' %}" width="80%" alt="point" ></a>
+    </div>
+
+
+</body>
+</html>

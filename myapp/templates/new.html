@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="new" method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  <input type="file" name="file2">
+  <input type="submit" value="Upload">
+<img src="{{ images.image_0 }}" alt="Output Image">
+
+</form>
+</body>
+</html>

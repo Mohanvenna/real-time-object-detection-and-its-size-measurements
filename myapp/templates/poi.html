@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>point to point</title>
+</head>
+<body>
+<form action="poi" method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  <input type="file" name="file3">
+  <input type="submit" value="Upload">
+    {% if dist %}
+    <p>The distance between the two selected points is {{ dist }} units.</p>
+{% endif %}
+</form>
+</body>
+</html>
